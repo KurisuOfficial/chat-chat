@@ -189,7 +189,7 @@ int main(void) {
                 struct client *c = createClient(fd);
                 /* Send a welcome message. */
                 char *welcome_msg =
-                    "Welcome to Simple Chat! "
+                    "Welcome to Chat Chat! "
                     "Use /nick <nick> to set your nick.\n";
                 write(c->fd,welcome_msg,strlen(welcome_msg));
                 printf("Connected client fd=%d\n", fd);
